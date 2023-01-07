@@ -1,51 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
 }
 
-.header{
-    /* From https://css.glass */
-background: rgba(255, 255, 255, 0.06);
-border-radius: 10px;
-box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
-backdrop-filter: blur(3.7px);
--webkit-backdrop-filter: blur(3.7px);
-border: 1px solid rgba(255, 255, 255, 0.3);
-}
+/* .header {
+    
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: sticky;
+} */
 
-.nav-items{
+.nav-items {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    background: rgba(255, 255, 255, 0.06);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+    backdrop-filter: blur(3.7px);
+    -webkit-backdrop-filter: blur(3.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    top: 0;
+    position: sticky;
 }
 
-.nav-item{
+.nav-item {
     list-style: none;
     display: flex;
 }
 
-.nav-item{
+.nav-item {
     margin: 8px 5px;
     padding: 10px;
-   
+
 }
-.list{
+
+.list {
     cursor: pointer;
 
 
 }
 
-.list:hover{
+.list:hover {
     color: orange;
-    
+
 }
 
-.btn-primary{
+.btn-primary {
     padding: 14px 18px;
-    border: 1px solid lightslategray; 
+    border: 1px solid lightslategray;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bolder;
@@ -56,9 +66,9 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     cursor: pointer;
 }
 
-.btn-secondary{
+.btn-secondary {
     padding: 14px 18px;
-    border: none; 
+    border: none;
     border-radius: 5px;
     font-size: 16px;
     font-weight: bolder;
@@ -69,6 +79,39 @@ border: 1px solid rgba(255, 255, 255, 0.3);
     cursor: pointer;
 }
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     background-color: rgb(206, 134, 0);
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    margin-top: 20px;
+}
+
+.section-title{
+    font-size: 50px;
+    font-weight: 800;
+    padding: 30px 0;
+}
+
+.section-description{
+    font-size: 18px;
+    padding: 25px 0;
+}
+
+.play{
+
+    margin: 20px 5px 0 5px;
+
+}
+
+.watch{
+    color: orange;
+    border-bottom: 1px solid orange;
+    text-decoration: none;
 }
