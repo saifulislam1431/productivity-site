@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.header{
+    /* From https://css.glass */
+background: rgba(255, 255, 255, 0.06);
+border-radius: 10px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+backdrop-filter: blur(3.7px);
+-webkit-backdrop-filter: blur(3.7px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-item{
+    list-style: none;
+    display: flex;
+}
+
+.nav-item{
+    margin: 8px 5px;
+    padding: 10px;
+   
+}
+.list{
+    cursor: pointer;
+
+
+}
+
+.list:hover{
+    color: orange;
+    
+}
+
+.btn-primary{
+    padding: 14px 18px;
+    border: 1px solid lightslategray; 
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    justify-content: center;
+    background-color: transparent;
+    color: rgba(0, 0, 0, 0.932);
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.btn-secondary{
+    padding: 14px 18px;
+    border: none; 
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bolder;
+    justify-content: center;
+    background-color: orange;
+    color: white;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.btn-secondary:hover{
+    background-color: rgb(206, 134, 0);
+}
